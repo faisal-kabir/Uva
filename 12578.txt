@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+#define pi acos(-1)
+
+int main()
+{
+    double n,m,w,l,r,c_a,g_area,r_area;
+    int x,i;
+    scanf("%d",&x);
+    for(i=0; i<x; i++)
+    {
+
+        scanf("%lf",&l);
+        w=l*(0.6);
+        r=l*(0.2);
+        r_area=w*l;
+        c_a=pi*r*r;
+        g_area=(r_area-c_a);
+        printf("%.2lf %.2lf\n",c_a,g_area);
+    }
+
+    return 0;
+
+}
